@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home.css">
+    <title>Travel Website!</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Travel</h1>
+            <div class="navlinks" id="myNav">
+                <img src="images/close.png" onclick="closeMenu()" />
+                <ul>
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>About Us</li></a>
+                    <a href="#"><li>Travel</li></a>
+                </ul>
+            </div>
+            <img src="images/menuu.png" onclick="showMenu()" />
+        </div>
+          <div class="overlay"></div>
+        <video src="images/background.mp4" muted loop autoplay></video>
+
+        <div class="content">
+            <h1>NEVER STOP</h1>
+                <h1> TO EXPLORE THE WORLD</h1> 
+            <p>Travelling is fun and it offer many unique experience.
+                 No matter even if you live in a vibrant city or have a very active social life, 
+                 travelling can help you to be more satisfied. 
+                 Visiting different places all around the world can help you see how people are living, 
+                 what are their daily routines etc.
+                You will learn many new things and you will have a broader view.</p>
+                
+            <button type="button">Explore</button>
+        </div>
+    </div>
+    <script>
+        var show = document.getElementById("myNav");
+
+        function showMenu() {
+            show.style.right = "0";
+        }
+        function closeMenu() {
+            show.style.right = "-200px";
+        }
+
+            </script>
+    
+</body>
+</html>
